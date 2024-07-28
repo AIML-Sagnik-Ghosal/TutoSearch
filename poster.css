@@ -68,7 +68,7 @@ body{
 .main{
     width: 90vw;
     height: 70vh;
-    border: 5px solid rgb(255, 255, 255);
+    border: 10px solid rgb(255, 255, 255);
     margin: 5%;
 }
 .card{
@@ -228,4 +228,110 @@ div.read button{
     -webkit-box-align: left;
     -ms-flex-align: left;
     align-items: left;
+}
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #deaeda;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+}
+
+.faq-question::after {
+    content: '\002B'; /* Plus sign */
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+    transform: rotate(45deg); /* Rotate to show minus sign */
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+div.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #de90fb;
+}
+div.about .ab{
+    width: 40vw;
+    border: 1px solid black;
+    padding: 5%;
+    background-image: url("https://t3.ftcdn.net/jpg/03/44/67/38/360_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg");
+    border: none;
+    background-repeat: no-repeat;
+}
+div.about .ab.f{
+    transform: translateX(4.5%) translatey(-10%);
+    z-index: 50;
+}
+div.about .ab.s{
+    transform: translateX(-4.5%) translatey(25%);
+}
+div.about .ab p{
+  font-size:0.8em;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+}
+.help{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    gap: 6px;
+}
+.elementor-widget-container{
+-webkit-text-size-adjust: 100%;
+text-align: center;
+color: #fff9f9;
+font-family: "Poppins", Sans-serif;
+font-weight: 400;
+font-size: 13px;
+box-sizing: border-box;
+transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+margin: 12px 0px 10px 0px;
 }
