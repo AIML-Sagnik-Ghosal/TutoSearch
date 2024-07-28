@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: rgba(255, 198, 242, 0.778);
+    background-color: rgba(229, 172, 255, 0.778);
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ body{
     top: 10px;
     left: 35vw;
     z-index: 100;
-    background-color:rgba(204, 54, 211, 0.863);
+    background-color:rgba(221, 119, 226, 0.863);
 }
 .sign{
     position: fixed;
@@ -49,14 +49,13 @@ body{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    background-color: #ffc1fc;
+    background-color: #debbf0;
     border-radius: 6px;
     padding: 10px 20px 10px 0;
     flex-wrap: wrap;
     margin: auto;
     -webkit-box-pack: center;
     justify-content: space-around;
-    border: 1px solid #ececec;
     width: 90vw;
     margin-bottom: 10px;
 }
@@ -64,12 +63,12 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #ffc1fc;
+    background-color: #dbb3e9;
 }
 .main{
     width: 90vw;
     height: 70vh;
-    border: 1px solid black;
+    border: 5px solid rgb(255, 255, 255);
     margin: 5%;
 }
 .card{
