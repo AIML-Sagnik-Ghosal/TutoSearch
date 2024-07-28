@@ -22,7 +22,7 @@ body{
     border-radius: 5px;
     position: fixed;
     top: 10px;
-    left: 35vw;
+    left: 15vw;
     z-index: 100;
     background-color:rgba(221, 119, 226, 0.863);
 }
