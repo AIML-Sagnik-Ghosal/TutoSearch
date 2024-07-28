@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(255, 198, 242, 0.778);
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 8vh;
+    padding: 2px 10px 2px 10px;
+    margin: auto;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    left: 35vw;
+    z-index: 100;
+    background-color:rgba(204, 54, 211, 0.863);
+}
+.sign{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 100;
+}
+.sign button{
+    width: 7.5vw;
+}
+.space{
+    height: 15vh;
+}
+.tag-line{
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    color:rgb(0, 0, 255);
+}
+.nav{
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #ffc1fc;
+    border-radius: 6px;
+    padding: 10px 20px 10px 0;
+    flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    border: 1px solid #ececec;
+    width: 90vw;
+    margin-bottom: 10px;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffc1fc;
+}
+.main{
+    width: 90vw;
+    height: 70vh;
+    border: 1px solid black;
+    margin: 5%;
+}
+.card{
+    width: 50vw;
+    min-width: 100px;
+    max-width: 250px;
+    max-height: 50vh;
+    background-color: white;
+    border: 1px ridge rgb(187, 200, 212);
+    border-radius: 20px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.slide-in {
+    z-index: 10; /* to position it in front of the other content */
+    position: absolute;
+    overflow: hidden; /* to prevent scrollbar appearing */
+    right: 5%;
+    transform: translateY(15%);
+}
+.slide-in.from-right{
+    animation: X 1s linear 1s infinite;
+}
+@keyframes X {
+    0%{
+        transform: translateX(-500%);
+        -webkit-transform: translateX(-500%);
+    }
+    99.99%{
+        right: 0%;
+    }
+}
+.slide-in-content {
+    transition: transform 0.5s ease-in; /* our nice transition */
+}
+.slide-in.from-right .slide-in-content {
+    transform: translateX(200%);
+    -webkit-transform: translateX(100%);
+}
+.card img{
+    width: 50%;
+    height: 25%;
+    margin: 5%;
+    border-radius: 25%;
+}
+div.identity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h4{
+    margin: auto;
+}
+div.quality{
+    font: 1em sans-serif;
+    display: flex;
+    gap: 2.5px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+div.quality div{
+    padding: 5px;
+    font: 0.8em Cursive;
+    border-radius: 10px;
+    background-color: wheat;
+}
+div.quantity{
+    font: 1em sans-serif;
+    margin-top: 5%;
+    display: flex;
+    gap: 2.5px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+div.quantity div{
+    padding: 5px;
+    font: 0.8em Cursive;
+    border-radius: 10px;
+    background-color: rgb(207, 228, 230);
+}
+.card .classes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap:wrap;
+    padding: 5%;
+}
+.card .subject{
+    padding: 5px;
+    font: 0.6em Cursive;
+    border-radius: 10px;
+    background-color: rgb(86, 197, 17);
+}
+.card .class{
+    padding: 5px;
+    font: 0.6em Cursive;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 0);
+}
+.card p{
+    padding: 0% 5% 0% 5%;
+    font: 0.8em Cursive;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div.read{
+    color: blue;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.read a{
+    text-decoration: none;
+}
+div.read button{
+    background-color: aquamarine;
+    padding: 2.5px 5px 2.5px 5px;
+    border: 1px solid black;
+}
+.elementor-accordion{
+    text-align: start;
+}
+.elementor-accordion-item{
+
+}
+.faq{
+    color: #232323;
+    font-family: "FoundersGrotesk","Lato",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    line-height: 1.5;
+    box-sizing: inherit;
+    max-width: 980px;
+    padding: 0 24px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px -6px rgb(24 19 87 / 12%),0 8px 24px -4px rgb(24 19 87 / 8%);
+}
+.css-frfu37{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: left;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+}
