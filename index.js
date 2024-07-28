@@ -31,5 +31,11 @@ const infowindow = new google.maps.InfoWindow({headerContent:"Name of Teacher",h
   marker.addListener("click", () => {
     infowindow.open(map, marker);
   });
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const faqAnswer = item.nextElementSibling;
+        faqAnswer.style.display = faqAnswer.style.display === 'block' ? 'none' : 'block';
+    });
+});
 }
 initMap();
